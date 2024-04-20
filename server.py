@@ -38,6 +38,25 @@ def conectar():
     except Exception as e:
         print('Error al ejecutar el comando:', str(e))
 
+    try:
+       # Ejecutar proy_eq1_nav2_system
+        command = 'ros2 launch proy_eq1_nav2_system proy_eq1_tb3_sim_nav2.launch.py'
+        # Ejecutar el comando en una nueva ventana de terminal utilizando gnome-terminal
+        subprocess.Popen(['gnome-terminal','--geometry=80x24+0+0', '--window', '--', 'bash', '-c', command])
+    except Exception as e:
+        print('Error al ejecutar el comando:', str(e))
+
+    try:
+        # Lanzamos el fichero que publica la posición inicial
+        command = 'ros2 run proy_eq1_nav2_system initial_pose_pub'
+        # Ejecutar el comando en una nueva ventana de terminal utilizando gnome-terminal
+        subprocess.Popen(['gnome-terminal','--geometry=80x24+0+0', '--window', '--', 'bash', '-c', command])
+    except Exception as e:
+        print('Error al ejecutar el comando:', str(e))
+
+
+        
+
     dato = "Conexion con el servidor exitosa"
     mensaje = String()
     mensaje.data = dato

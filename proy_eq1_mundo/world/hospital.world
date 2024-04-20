@@ -19,6 +19,212 @@
       <uri>model://ground_plane</uri>
       <pose>0 0 -0.1 0 -0 0</pose>
     </include>
+    <include>
+      <pose>-2.0 -0.5 0.0 0.0 0.0 0.0</pose>
+      <uri>model://turtlebot3_burger</uri>
+    </include>
+    <actor name="Male_visitor">
+    <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <scale>1.0</scale>
+        
+    </skin>
+    <animation name="walk">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <interpolate_x>true</interpolate_x>
+    </animation>
+    <script>
+        <loop>true</loop>
+        <delay_start>0.000000</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walk" tension="0.6">
+            <waypoint>
+                <time>0</time>
+                <pose>0 1 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>2</time>
+                <pose>2.0 1 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>2.5</time>
+                <pose>2 1 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>4</time>
+                <pose>2 2 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>4.5</time>
+                <pose>2 2 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>6</time>
+                <pose>0 2 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>6.5</time>
+                <pose>0 2 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>8</time>
+                <pose>0 1 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>8.5</time>
+                <pose>0 1 0 0 0 0</pose>
+            </waypoint>
+        </trajectory>
+    </script>
+    </actor>
+    <actor name="Male_visitor2">
+    <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <scale>1.0</scale>
+        
+    </skin>
+    <animation name="walk">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <interpolate_x>true</interpolate_x>
+    </animation>
+    <script>
+        <loop>true</loop>
+        <delay_start>0.000000</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walk" tension="0.6">
+            <waypoint>
+                <time>0</time>
+                <pose>-7 10 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>10</time>
+                <pose>7 10 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>10.5</time>
+                <pose>7 10 0 0 0 3.14</pose>
+            </waypoint>
+            <waypoint>
+                <time>20.5</time>
+                <pose>-7 10 0 0 0 3.14</pose>
+            </waypoint>
+            <waypoint>
+                <time>21</time>
+                <pose>-7 10 0 0 0 0</pose>
+            </waypoint>
+        </trajectory>
+    </script>
+    </actor>
+    <actor name="Male_visitor3">
+    <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <scale>1.0</scale>
+        
+    </skin>
+    <animation name="walk">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <interpolate_x>true</interpolate_x>
+    </animation>
+    <script>
+        <loop>true</loop>
+        <delay_start>0.000000</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walk" tension="0.6">
+            <waypoint>
+                <time>0</time>
+                <pose>8 -2 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>10</time>
+                <pose>7.1 -8.7 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>10.5</time>
+                <pose>7.1 -8.7 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>13</time>
+                <pose>5.82 -8.76 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>13.5</time>
+                <pose>5.82 -8.76 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>23</time>
+                <pose>5.80 -23 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>23.5</time>
+                <pose>5.82 -23 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>26</time>
+                <pose>9.66 -23 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>26.5</time>
+                <pose>9.66 -23 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>35</time>
+                <pose>8.136 -15.15 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>50</time>
+                <pose>8.136 -15.15 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>60</time>
+                <pose>7.55 -23 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>60.5</time>
+                <pose>7.55 -23 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>63</time>
+                <pose>5.80 -23 0 0 0 3.142</pose>
+            </waypoint>
+            <waypoint>
+                <time>63.5</time>
+                <pose>5.80 -23 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>66</time>
+                <pose>5.37 -28.1 0 0 0 -1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>66.5</time>
+                <pose>5.37 -28.1 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>75</time>
+                <pose>5.82 -8.76 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>75.5</time>
+                <pose>5.82 -8.76 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>78</time>
+                <pose>7.1 -8.72 0 0 0 0</pose>
+            </waypoint>
+            <waypoint>
+                <time>78.5</time>
+                <pose>7.1 -8.72 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>88</time>
+                <pose>8 -2 0 0 0 1.57</pose>
+            </waypoint>
+            <waypoint>
+                <time>100</time>
+                <pose>8 -2 0 0 0 -1.57</pose>
+            </waypoint>
+        </trajectory>
+    </script>
+    </actor>
     <model name="aws_robomaker_hospital_floor_01_floor_1">
       <include>
         <uri>model://aws_robomaker_hospital_floor_01_floor</uri>
@@ -1286,9 +1492,5 @@
         <pose>1.30985 -0.727185 -0 0 0 -1.53446</pose>
       </include>
     </model>
-     <include>
-      <pose>-2.0 -0.5 0.0 0.0 0.0 0.0</pose>
-      <uri>model://turtlebot3_burger</uri>
-    </include>
   </world>
 </sdf>
